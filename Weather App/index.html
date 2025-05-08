@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Checker</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Weather Checker App</h1>
+    <div class="container">
+        <div class="Weather-box">
+            <input type="text" id="cityInput"
+            placeholder="Please enter city name" maxlength="100" />
+            <button onclick="getWeather()">Check Weather</button>
+            <button onclick="saveFavorite()">Save to Favorites</button>
+            <div id="WeatherResult"></div>
+        </div>
+        <div class="comparison-box">
+            <h2>Compare Two Cities</h2>
+            <input type="text" id="city1"
+            placeholder="City 1"/>
+            <input type="text" id="city2"
+            placeholder="City 2"/>
+            <button onclick="compareWeather()">Compare</button>
+            <div class="comparison"
+            id="comparisonResult"></div>
+        </div>
+        <div class="favorites">
+            <h2>Favorite Cities</h2>
+            <ul id="favoritesList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
